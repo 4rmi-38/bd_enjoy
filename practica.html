@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фильмы для всей семьи</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ax1").click(function() {
+           if ($("#me1").css("display")=="none"){
+            $("#me1").slideDown(500);
+            $("#me2").slideUp(500);
+            }
+            else $("#me1").slideUp(500);
+        });
+        $ ("#ax2").click(function(){
+            if($("#me2").css("display")=="none"){
+                $("#me2").slideDown(500);
+                $("#me1").slideUp(500);
+            }
+            else $("#me2").slideUp(500);
+        });
+    });
+    </script>
+</head>
+<body>
+<div class="topl">
+<div class="wrap">
+    <a href="#" id="ax1">Главная</a>
+<div class="menux" id="me1">
+   <a href="#">1dsfdsf</a>
+   <a href="#">2dsfdsf</a>
+   <a href="#">3sdfds</a>
+   <a href="#">4sdfs</a>
+</div>
+<a href="#" id="ax2">Новости</a>
+<div class="menux" id="me2">
+    <a href="#">1dsfdsf</a>
+   <a href="#">2dsfdsf</a>
+   <a href="#">3sdfds</a>
+   <a href="#">4sdfs</a>
+</div>
+<a href="#">Контакты</a>
+</div>
+</div>
+    </body>
+</html>
